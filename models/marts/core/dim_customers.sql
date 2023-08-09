@@ -12,7 +12,7 @@ orders as (
 
 final as (
 
-    select orders.first_name
+    select customers.customer_id
     from customers left join orders USING (customer_id)
 )
 
